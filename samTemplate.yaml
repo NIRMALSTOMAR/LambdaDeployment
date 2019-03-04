@@ -22,7 +22,7 @@ Resources:
         Variables:
           REGION: us-east-1
           
-LambdaFunctionLogGroup:
+  LambdaFunctionLogGroup:
     Type: 'AWS::Logs::LogGroup'
     DependsOn: 'LambdaCD'
     Properties: 
