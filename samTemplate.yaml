@@ -23,8 +23,8 @@ Resources:
           REGION: us-east-1
           
 LambdaFunctionLogGroup:
-    Type: "AWS::Logs::LogGroup"
-    DependsOn: "LambdaCD"
+    Type: 'AWS::Logs::LogGroup'
+    DependsOn: 'LambdaCD'
     Properties: 
       RetentionInDays: 14
       LogGroupName: !Join ["", ["/aws/lambda/", !Ref LambdaCD]]
